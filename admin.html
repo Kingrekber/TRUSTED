@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Panel | KING.REKBER</title>
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+<header class="top">
+  <h1>Admin Panel</h1>
+  <span>KING.REKBER</span>
+</header>
+
+<main class="wrap">
+
+  <!-- MAIN SETTINGS -->
+  <section class="card">
+    <h2>Pengaturan Utama</h2>
+
+    <label>Judul</label>
+    <input id="title">
+
+    <label>Subtitle</label>
+    <input id="subtitle">
+
+    <label>Avatar URL</label>
+    <input id="avatar" placeholder="https://...">
+
+    <label>Background URL</label>
+    <input id="background" placeholder="https://...">
+
+    <button class="btn save-main" onclick="saveMain()">💾 Simpan Pengaturan</button>
+  </section>
+
+  <!-- LINKS -->
+  <section class="card">
+    <h2>Daftar Link</h2>
+    <div id="links"></div>
+    <button class="btn add" onclick="addLink()">+ Tambah Link</button>
+  </section>
+
+</main>
+
+<div id="toast"></div>
+
+<script src="admin.js"></script>
+</body>
+</html>

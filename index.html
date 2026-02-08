@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KING.REKBER | Official Rekber</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#1da1f2">
+</head>
+
+<script>
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("./sw.js")
+    .then(() => console.log("Service Worker registered"))
+    .catch(err => console.error("SW failed:", err));
+}
+</script>
+
+
+<body>
+
+<div class="overlay"></div>
+
+<main class="container">
+
+  <!-- PROFILE -->
+  <section class="profile">
+    <div class="avatar-wrap">
+      <img id="avatar" class="avatar" src="">
+      <span class="avatar-glow"></span>
+    </div>
+
+    <h1 class="title">
+      <span id="title">KING.REKBER</span>
+      <img class="verified"
+        src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Twitter_Verified_Badge.svg"
+        alt="verified">
+    </h1>
+
+    <p id="subtitle" class="subtitle">Welcome King.rekber</p>
+
+    <div class="trust-strip">
+      <span>🔒 Aman</span>
+      <span>⚡ Cepat</span>
+      <span>🛡️ Terlengkap</span>
+    </div>
+  </section>
+
+  <!-- LINKS -->
+  <section id="links" class="links"></section>
+
+  <!-- SAFETY -->
+  <p class="notice">
+    <br>
+    Admin resmi hanya melalui link di atas
+  </p>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2026 KING.REKBER<br>
+    Trusted Middleman Indonesia
+  </footer>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
